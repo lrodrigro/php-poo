@@ -24,6 +24,11 @@ class Bicycle
     */
     public $nbWheels = 2;
 
+    public function __construct(string $color)
+    {
+        $this->color = $color;
+    }
+
     public function forward()
     {
         $this->currentSpeed = 15;
